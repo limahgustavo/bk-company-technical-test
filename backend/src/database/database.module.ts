@@ -3,9 +3,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Product } from '../products/product.entity';
 import { ProductCost } from '../product-costs/product-cost.entity';
 import { Order } from '../orders/order.entity';
-import { OrderItem } from '../orders/order-item.entity';
-import { InitSchema1708100000000 } from './migrations/1708100000000-InitSchema';
+
+
 import { SeedData1708100000001 } from './migrations/1708100000001-SeedData';
+import { InitSchema1708100000000 } from './migrations/1708100000000-InitSchema';
+import { OrderItem } from 'src/orders/order-item.entity';
+
 
 @Module({
   imports: [
